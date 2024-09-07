@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+	background-image: url("https://cdn.pixabay.com/photo/2022/09/21/17/02/blue-background-7470781_1280.jpg");
+    background-repeat: no-repeat;
+    backgroud-attachment: fixed;
+    backround-size: cover;
+	display: flex;
+  	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+#body-matter{
+ min-height: 50%;
+ max-width: 90%;
+ margin:3rem auto;
+ padding: 2rem;
+ background-color: rgba(0,0,0,0.7);
+ color: white;
+ box-shadow: 4px 4px 5px black;
+ border-radius: 20px;
+}
+.title{
+	text-align: center;
+	margin: 7px;
+	padding: 3px;
+}
+.input-boxes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.input-box{
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ padding-bottom: 15px;
+}
+
+.input{
+	width: 100%;
+	border-radius: 10px; 
+	padding: 12px;
+	margin: 5px;
+}
+.gender{
+	margin: 10px;
+	padding:5px;
+}
+.gender-details{
+	cursor: pointer;
+}
+#button{
+	border-radius: 20px;
+	width:100%;
+	background-color: rgba(0,0,0,0.3);
+	padding:13px;
+	margin-top: 20px;
+	color: white;
+    transition: rgb(4, 55, 67) 3s ease;
+}
+#button:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+    /* Larger Screens (Laptops) */
+    @media (min-width: 768px) {
+		.input-box {
+			width: 48%; /* Half-width for inputs */
+		}
+	
+		.Gender-details {
+			margin-top: 20px;
+		}
+	}
+	
+	/* Smaller Screens (Phones) */
+	@media (max-width: 767px) {
+		.input-box {
+			width: 100%; /* Full-width inputs for small screens */
+		}
+	
+		#body-matter {
+			margin: 1rem; /* Reduce margin for smaller screens */
+			padding: 1rem;
+		}
+	
+		#button {
+			width: 100%;
+		}
+	
+		.gender {
+			display: block; /* Stack gender options */
+			margin-top: 10px;
+		}
+	}
+
+

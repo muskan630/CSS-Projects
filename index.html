@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="formspree.io/f/your-id" method = "post">
+<div id="body-matter">
+ <div id="left-side">
+ <h1 class="title">Registration Form</h1>
+ <div class="input-boxes">
+ <div class="input-box ">
+ <label>Full name: </label><br>
+ <input type="text" class="input" id="name" placeholder="Enter Full name" required></div>
+ 
+ <div class="input-box ">
+ <label>Email Address: </label><br>
+ <input type="email" id="email" class="input" placeholder="Enter email address" required></div>
+ 
+ <div class="input-box ">
+ <label>Mobile Number: </label><br>
+ <input type="tel" id="pho.no." class="input" placeholder="Enter mobile number" pattern="[0-9]{10}" required></div>
+ 
+ <div class="input-box">
+ <label>BirthDate: </label><br>
+ <input type="month" class="input" id="birthdate" ></div>
+ 
+ <div class="input-box address"> 
+   <label>Address: </label><br>
+   <input type="text" class="input" id="address" placeholder="Enter address">
+ </div>
+ 
+ <div class="input-box country">
+ <label>Country: </label><br>
+ <input list="country" name="country" id="country" class="input" placeholder="Country" required>
+ <datalist id="countries">
+  <option >Afganistan</option>
+  <option>Australia</option>
+  <option>Austria</option>
+  <option>Brazil</option>
+  <option>Burma</option>
+  <option>Bangladesh</option>
+  <option>Cambodia</option>
+  <option>Canada</option>
+  <option>China</option>
+  <option>Colombia</option>
+  <option>Egypt</option>
+  <option>France</option>
+  <option>Georgia</option>
+  <option>Greece</option>
+  <option>Germany</option>
+  <option >Hungary</option>
+  <option>Iceland</option>
+  <option>India</option>
+  <option>Iran</option>
+  <option>Indonesia</option>
+  <option>Israel</option>
+  <option>Italy</option>
+  <option>Japan</option>
+  <option>Korea<option>
+  <option>Malaysia</option>
+  <option>Maldives</option>
+  <option>Mexico</option>
+  <option>Nepal</option>
+  <option>Netherlads</option>
+  <option>NewZeland</option>
+  <option>Nigeria</option>
+  <option>North German Union</option>
+  <option>Pakistan</option>
+  <option>Poland</option>
+  <option>Republic of Korea(South Korea)</option>
+  <option>Russia</option>
+  <option>Saudi Arabia</option>
+  <option>Singapore</option>
+  <option>South Africa</option>
+  <option>Spain</option>
+  <option>Sri Lanka</option>
+  <option>Switzerland</option>
+  <option>Thailand</option>
+  <option>Turkey</option>
+  <option>Ukraie</option>
+  <option>Zambia</option>
+ </datalist></div>
+ </div>
+ 
+ <div class="Gender-details ">
+  <span class="gender-title"> Gender: </span><br>
+   <input type="radio" class="gender" name="gender" id="gender1" value="male" required>Male
+   <input type="radio" class="gender" name="gender" id="gender2" value="female" required>Female
+   <input type="radio" class="gender"name="gender" id="gender3" value="other" required>Other
+ </div>
+ 
+  <input type="submit" id="button" >
+ </div>
+ </div>
+
+</form>
+</body>
+</html>
